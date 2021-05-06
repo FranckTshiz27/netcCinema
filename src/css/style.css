@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Netflix sans";
+  src: url("../fonts/NetflixSansLight.ttf");
+}
+body {
+  background-image: url("../images/bgImg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Netflix sans";
+}
+
+h1 {
+  color: #ed2939;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  padding: 10%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  height: 50px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 40%;
+  padding: 0;
+  margin-right: 100px;
+}
+.nav .nav__li {
+  padding: 11px;
+  color: #FFF;
+}
+
+.banner {
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.banner .banner__title {
+  text-align: center;
+  width: 55%;
+  color: #FFF;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 60Px;
+  margin-bottom: 0;
+  margin-top: -50px;
+}
+.banner .banner__carroussel__container {
+  height: 250px;
+  width: 100%;
+  margin-top: -60px;
+}
+.banner .banner__carroussel__container img {
+  width: 80px;
+  height: 230px;
+  object-fit: cover;
+  margin: 5px;
+  position: relative;
+  background-color: #FFF;
+}
+.banner .banner__carroussel__container img:before {
+  content: "";
+  background: linear-gradient(90deg, #020024 0%, rgba(9, 9, 121, 0.4730625527) 89%, #00d4ff 100%);
+  width: 800px;
+  height: 600px;
+  border-radius: 50px;
+  position: absolute;
+  transform: translate(-50px, -50px);
+}
+.banner .banner__carroussel__container .banner__carroussel__container__images {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.ipFilter {
+  width: 350px;
+  background-color: #FFF;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 30px;
+}
+.ipFilter .ipFilter__input {
+  margin: 0;
+  width: 95%;
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px;
+}
+.ipFilter .ipFilter__input:active {
+  outline: none;
+}
+.ipFilter .ipFilter__input:focus {
+  outline: none;
+}
+.ipFilter i {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  cursor: pointer;
+}
+.ipFilter:active {
+  border: 1px solid #FFF;
+}
+.ipFilter:focus {
+  border: 1px solid #FFF;
+}
+
+.news {
+  background-color: #131A26;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news .news__title {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+.news .news__movies-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 100%;
+}
+.news .news__movies-container .news__movies-container__movie {
+  margin: 5px;
+}
+.news .news__movies-container .news__movies-container__movie img {
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
+  margin: 5px;
+  cursor: pointer;
+  transition: 2s;
+}
+.news .news__movies-container .news__movies-container__movie img:hover {
+  transform: scale(1.1);
+}
+.news .news__movies-container .news__movies-container__movie .news__movies-container__movie__description {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  margin: 5px;
+}
+.news .news__movies-container .news__movies-container__movie .news__movies-container__movie__description .news__movies-container__movie__description__title {
+  font-size: 13px;
+  color: #ed2939;
+}
+.news .news__movies-container .news__movies-container__movie .news__movies-container__movie__description .news__movies-container__movie__description__date {
+  font-size: 11px;
+}
+
+.news_series {
+  height: 350px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.news_series .news_series__title {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 900;
+}
+.news_series .news_series__container {
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=style.css.map */
