@@ -1,50 +1,49 @@
-.ipFilter
-{
-   
-   
-    width:350px;
-    background-color: #FFF;
-    border: 2px solid rgba($color: #FFF, $alpha: 0.3);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 30px;
-    
-    .ipFilter__input
-    {
-        margin: 0;
-        width: 95%;
-        background-color: transparent;
-        border: none;
-        color: rgba($color: #000, $alpha: 0.6);
-        font-size: 10px;
-        font-weight: 700;
-        padding:5px;
-        
+.ipFilter {
+  width: 1000px;
 
-        &:active
-        {
-            outline: none;
-        }
-        &:focus
-        {
-            outline: none;
-        }
-    }
+  display: flex;
+  align-items: center;
 
-    i 
-    {
-        color:rgba($color: #000, $alpha: 0.5);
-        font-size: 12px;
-        cursor: pointer;
+  .ipFilter__input {
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    color: rgba($color: #000, $alpha: 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 5px;
+    text-align: center;
+    border-radius: 20px;
+    &:active {
+      outline: none;
     }
+    &:focus {
+      outline: none;
+    }
+  }
 
-    &:active
-    {
-        border: 1px solid #FFF;
-    }
-    &:focus
-    {
-        border: 1px solid #FFF;
-    }
+  button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(
+      60deg,
+      rgba(#000, 0.9) 30%,
+      $secondaryColor 70%
+    );
+    height: 48px;
+    width: 95px;
+    border-radius: 120px;
+    margin-left: -90px;
+    border: none;
+  }
+
+  &:active {
+    border: 1px solid #fff;
+  }
+  &:focus {
+    border: 1px solid #fff;
+  }
 }

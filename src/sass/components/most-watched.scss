@@ -1,0 +1,71 @@
+.most-watched {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #000;
+
+  strong {
+    color: $secondaryColor;
+  }
+  h1 {
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+    font: size 3.5em;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 40px;
+    &:after {
+      content: "";
+      background-color: #000;
+      height: 4px;
+      width: 100px;
+      position: absolute;
+      transform: translate(-300%, 50px);
+      background: linear-gradient(
+        60deg,
+        rgba(#fff, 1) 50%,
+        $secondaryColor 50%
+      );
+    }
+  }
+
+  .most-watched__types-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    button {
+      padding: 10px;
+      border: 2px solid $secondaryColor;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 7px;
+      color: $secondaryColor;
+      background-color: transparent;
+      transition: 1s;
+
+      &:hover {
+        background-color: $secondaryColor;
+        color: #fff;
+      }
+      &:active {
+        background-color: $secondaryColor;
+        color: #fff;
+      }
+    }
+  }
+
+  .most-watched__movies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+    position: relative;
+  }
+}

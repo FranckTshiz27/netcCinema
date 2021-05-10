@@ -1,0 +1,138 @@
+.myCard {
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  padding: 0;
+  height: 300px;
+  &:hover {
+    height: 400px;
+  }
+}
+
+.myCard .face {
+  width: 250px;
+  height: 300px;
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.myCard .face.face1 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(0);
+  margin-top: 0;
+}
+
+.myCard:hover .face.face1 {
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.myCard .face.face1 .content {
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .myCard__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 3px 0px 0px;
+
+    .myCard__footer__text-content {
+      display: flex;
+      flex-direction: column;
+      .myCard__title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .myCard__date {
+        font-size: 14px;
+        color: rgb(110, 107, 107);
+      }
+    }
+
+    .myCard__restriction {
+      font-size: 14px;
+      border: 1.5px solid #ff0057;
+      color: #ff0057;
+      border-radius: 50px;
+      padding: 4px;
+      text-align: center;
+    }
+  }
+}
+
+.myCard:hover .face.face1 .content {
+  opacity: 1;
+  width: 80%;
+  height: auto;
+}
+
+.myCard .face.face1 .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myCard .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.myCard .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(-300px);
+}
+
+.myCard:hover .face.face2 {
+  transform: translateY(0);
+  background: #ff0057;
+  height: 50%;
+  padding: 10px;
+}
+
+.myCard .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.myCard .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  margin: 10px;
+  i {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+.myCard .face.face2 .content a:hover {
+  background: rgba($color: #000, $alpha: 0.4);
+  color: #fff;
+}
