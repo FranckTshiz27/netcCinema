@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  color: rgba($color: #fff, $alpha: 0.7);
+  .footer__first-section {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    .footer__first-section__column {
+      margin: 10px;
+    }
+    .footer__first-section__column--logo {
+      margin: 10px;
+    }
+  }
+
+  .footer__second-section {
+    padding: 50px;
+    background-color: rgba($color: rgb(3, 3, 3), $alpha: 0.9);
+  }
+}

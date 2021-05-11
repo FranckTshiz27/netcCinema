@@ -121,6 +121,9 @@ header i {
 
 .news-backGround {
   background-image: url("../images/image18.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 .news-backGround .news {
@@ -702,6 +705,28 @@ header i {
   border: 2px solid #eb196e;
   border-radius: 100%;
   padding: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footer__first-section {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+footer .footer__first-section .footer__first-section__column {
+  margin: 10px;
+}
+footer .footer__first-section .footer__first-section__column--logo {
+  margin: 10px;
+}
+footer .footer__second-section {
+  padding: 50px;
+  background-color: rgba(3, 3, 3, 0.9);
 }
 
 .all_series {

@@ -12,6 +12,7 @@ import News_series from "./components/News_series";
 import MostWatched from "./components/MostWatched";
 import ShowInput from "./components/ShowInput";
 import News from "./components/News";
+import Footer from "./components/Footer";
 import InputVisibilityContext from "./Context";
 
 function App() {
@@ -19,13 +20,17 @@ function App() {
     <InputVisibilityContext.Provider>
       <html>
         <header>
-          <h1>NetCinema</h1>
+          <h1>BESTMovies</h1>
           <Navbar />
         </header>
         <Banner visibility={true} />
         <All />
         <MostWatched />
         <News />
+
+        <footer>
+          <Footer />
+        </footer>
       </html>
     </InputVisibilityContext.Provider>
   );
